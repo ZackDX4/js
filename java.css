@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://Dexter997.github.io/repo/MLE/lve.js"></script>
-    <script src="https://raw.githack.com/ZackDX4/js/main/java.js"></script>
-<style>
-
 body, html {
     margin: 0;
     padding: 0;
@@ -126,31 +117,3 @@ body, html {
         flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
     }
 }
-
-</style>
-
-</head>
-<body>
-<div id="mastrotv" style="display:none"></div>
-<!-- Stream -->
-
-<div class="channel-container">
-<h2 class="section-title">Malaysia & Singapore</h2>
-<div class="channels">
-<a class="channel-card" href="javascript:tv1();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/395_144.png">
-<a class="channel-card" href="javascript:tv2();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/396_144.png">
-<a class="channel-card" href="javascript:tv3();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/106_144.png">
-<a class="channel-card" href="javascript:tv6();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/tv6.jpg">
-<a class="channel-card" href="javascript:didiktv();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/didiktv.jpg">
-<a class="channel-card" href="javascript:tv8();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/115_144.png">
-<a class="channel-card" href="javascript:tv9();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/48_144.png">
-<a class="channel-card" href="javascript:event();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/liveevent.jpg">
-<a class="channel-card" href="javascript:ria();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/ria.jpg">
-<a class="channel-card" href="javascript:prima();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/prima.jpg">
-<a class="channel-card" href="javascript:oasis();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/oasis.jpg">
-<a class="channel-card" href="javascript:warna();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/warna.jpg">
-<a class="channel-card" href="javascript:citra();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/citra.jpg">
-<a class="channel-card" href="javascript:apremier();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/apremier.jpg">
-
-</body>
-</html>

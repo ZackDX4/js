@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://Dexter997.github.io/repo/MLE/lve.js"></script>
+    <script src="https://raw.githack.com/ZackDX4/js/main/java.js"></script>
+<style>
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; /* Dark background for the overall page */
+}
+
+.channel-container {
+    /*max-width: 1200px; */
+    max-width: 2000px;
+    margin: 0 auto;
+    padding: 20px;
+    color: #fff;
+}
+
+.section-title {
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: left;
+    color: #fff; /* Stylish white for section titles */
+}
+
+.channels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; */
+}
+
+.channel-card {
+    /*flex: 0 0 calc(20% - 15px); */ /* Adjust the width for 5 cards in a row */
+    /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
+    flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
+    border-radius: 10px;
+    background-color: #fff; /* Dark card background */
+    padding: 15px; */
+    margin: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Needed for the pseudo-element to position properly */
+    overflow: hidden; /* Ensures the pseudo-element does not overflow the border radius */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none; /* Removes underline from links */
+  color: inherit;
+    
+}
+
+.channel-card:hover {
+    transform: translateY(-5px); /* Raise the card slightly on hover */
+    cursor: pointer; /* Changes the mouse cursor to a pointer to indicate it's clickable */
+}
+
+.channel-card:hover::after {
+    content: '';
+    position: absolute;
+    top: -2px; /* Slightly inside the card to create the border effect */
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border: 2px solid #d93731; /* The red border color */
+    border-radius: 10px; /* Match the border radius of the card */
+    pointer-events: none; /* Ensures the pseudo-element does not interfere with clicking */
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.channel-logo img {
+    width: auto; /* Auto width to maintain aspect ratio */
+    max-height: 100%; /* Max-height to fit inside the container */
+    object-fit: contain; /* Ensures the image is contained within the element, preserving its aspect ratio */
+}
+
+.channel-logo {
+    width: 100%; /* Full width of the card */
+    aspect-ratio: 16 / 9; /* Maintain the aspect ratio of the logo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* background-color: #fff; */ /* Assuming a white background for logos */
+}
+
+.channel-timing {
+    font-size: 14px;
+    color: #ffa500; /* Orange color for timing and channel info */
+}
+
+.channel-card.keyboard-focus {
+  border: 2.5px solid #ffa500;
+  border-radius: .75rem;
+}
+
+        /* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+    .channel-card {
+        /* flex: 0 0 calc(25% - 15px);*/ /* 4 cards per row */
+        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
+        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .channel-card {
+        /* flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
+        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
+        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .channel-card {
+        /*flex: 0 0 calc(50% - 15px); /* 2 cards per row */
+        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
+        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
+    }
+}
+
+</style>
+
+</head>
+<body>
+<div id="mastrotv" style="display:none"></div>
+<!-- Stream -->
+
+<div class="channel-container">
+<h2 class="section-title">Malaysia & Singapore</h2>
+<div class="channels">
+<a class="channel-card" href="javascript:tv1();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/395_144.png">
+<a class="channel-card" href="javascript:tv2();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/396_144.png">
+<a class="channel-card" href="javascript:tv3();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/106_144.png">
+<a class="channel-card" href="javascript:tv6();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/tv6.jpg">
+<a class="channel-card" href="javascript:didiktv();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/didiktv.jpg">
+<a class="channel-card" href="javascript:tv8();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/115_144.png">
+<a class="channel-card" href="javascript:tv9();"><img class="channel-logo" src="https://divign0fdw3sv.cloudfront.net/Images/ChannelLogo/contenthub/48_144.png">
+<a class="channel-card" href="javascript:event();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/liveevent.jpg">
+<a class="channel-card" href="javascript:ria();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/ria.jpg">
+<a class="channel-card" href="javascript:prima();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/prima.jpg">
+<a class="channel-card" href="javascript:oasis();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/oasis.jpg">
+<a class="channel-card" href="javascript:warna();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/warna.jpg">
+<a class="channel-card" href="javascript:citra();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/citra.jpg">
+<a class="channel-card" href="javascript:apremier();"><img class="channel-logo" src="https://raw.githubusercontent.com/ZackDX4/img/main/data/apremier.jpg">
+
+</body>
+</html>

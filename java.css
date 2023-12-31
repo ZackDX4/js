@@ -1,29 +1,28 @@
-body, html {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    background-color: #000; /* Dark background for the overall page */
+body {
+  background: #0D111C;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
 }
 
-.channel-container {
-    /*max-width: 1200px; */
-    max-width: 2000px;
-    margin: 0 auto;
-    padding: 20px;
-    color: #fff;
+.outer {
+  max-width: 2000px;
+  background-color: transparent;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: #131728;
 }
 
-.section-title {
-    font-size: 14px;
-    margin-bottom: 20px;
-    text-align: left;
-    color: #fff; /* Stylish white for section titles */
-}
-
-.channels {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; */
+.section {
+  max-width: 1440px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 10px;
 }
 
 .channel-card {
@@ -32,7 +31,7 @@ body, html {
     flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
     border-radius: 10px;
     background-color: #fff; /* Dark card background */
-    padding: 15px; */
+    padding: 12px; */
     margin: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Soft shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -42,10 +41,6 @@ body, html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-    text-decoration: none; /* Removes underline from links */
-  color: inherit;
-    
 }
 
 .channel-card:hover {
@@ -65,12 +60,6 @@ body, html {
     pointer-events: none; /* Ensures the pseudo-element does not interfere with clicking */
     box-sizing: border-box;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.channel-logo img {
-    width: auto; /* Auto width to maintain aspect ratio */
-    max-height: 100%; /* Max-height to fit inside the container */
-    object-fit: contain; /* Ensures the image is contained within the element, preserving its aspect ratio */
 }
 
 .channel-logo {
@@ -93,27 +82,128 @@ body, html {
   border-radius: .75rem;
 }
 
-        /* Responsive adjustments */
-@media screen and (max-width: 1024px) {
-    .channel-card {
-        /* flex: 0 0 calc(25% - 15px);*/ /* 4 cards per row */
-        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
-        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
-    }
+/* ALL THUMBNAILS */
+
+.grid-workouts {
+  display: grid;
+  max-width: 1360px;
+  margin: auto;
+  /* margin: 0 40px 40px; */
+  grid-gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (max-width: 768px) {
-    .channel-card {
-        /* flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
-        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
-        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
-    }
+.grid-workouts2 {
+  display: grid;
+  padding-top: 10px;
+  max-width: 1360px;
+  margin: auto;
+  /* margin: 0 40px 20px; */
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (max-width: 480px) {
-    .channel-card {
-        /*flex: 0 0 calc(50% - 15px); /* 2 cards per row */
-        /* flex: 0 0 calc(15% - 15px); */  /* Adjust the width for 6 cards in a row */
-        flex: 0 0 calc(12% - 15px); /* Adjust the width for 8 cards in a row */
-    }
+.workout img {
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.metadata {
+  background-color: transparent;
+  color: #222222;
+  height: 10px;
+  font-size: 9px;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.title {
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+/* WORKOUTS */
+
+.workout {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.workout .btn {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: #3ea055;
+  color: white;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border: none;
+  cursor: default;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+}
+
+.workout .btn2 {
+  position: absolute;
+  float: bottom;
+  background: rgb(251,169,57);
+  background: linear-gradient(0deg, rgba(0,0,0,100) 0%, rgba(0,0,0,1) 100%);
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 7px;
+  border: none;
+  cursor: default;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.workout .name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1119px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

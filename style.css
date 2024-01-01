@@ -1,0 +1,142 @@
+body {
+  background: #131728;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+.outer {
+  max-width: 2000px;
+  background-color: transparent;
+  margin: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-shadow: 0 0 16px rgba(0, 0, 0, .25);
+}
+
+.section {
+  max-width: 1440px;
+  text-align: left;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* ALL THUMBNAILS */
+
+.workout img {
+  display: block;
+  border-radius: 5px;
+}
+
+.info {
+  margin: 0;
+  padding: 0;
+  color: #999;
+  font-size: 12px;
+}
+
+.title {
+  color: #fefefe;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 0px;
+}
+
+/* WORKOUTS */
+
+.grid-workouts {
+  display: grid;
+  max-width: 1360px;
+  margin: auto;
+  /* margin: 0 40px 40px; */
+  grid-gap: 12px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-workouts2 {
+  display: grid;
+  padding-top: 10px;
+  max-width: 1360px;
+  margin: auto;
+  /* margin: 0 40px 20px; */
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.workout {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.workout .btn2 {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 8px;
+  background-color: rgb(255, 255, 255, 0.75);
+  color: black;
+  font-size: 9px;
+  font-weight: bold;
+  padding: 3px 8px;
+  border: none;
+  cursor: default;
+  border-radius: 50px;
+}
+
+.workout .btn {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 0px;
+  background: rgb(251,169,57);
+  background: linear-gradient(135deg, rgba(251,169,57,1) 0%, rgba(186,43,96,1) 100%);
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 7px;
+  border: none;
+  cursor: default;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 0px;
+}
+
+.workout .name {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1119px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media screen and (max-width: 679px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .grid-workouts2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MPD schemaLocation="urn:mpeg:dash:schema:mpd:2011 http://standards.iso.org/ittf/PubliclyAvailableStandards/MPEG-DASH_schema_files/DASH-MPD.xsd" type="dynamic" availabilityStartTime="1970-01-01T00:00:00Z" publishTime="2025-04-03T09:34:42.330962Z" minimumUpdatePeriod="PT2S" timeShiftBufferDepth="PT3M" maxSegmentDuration="PT3S" minBufferTime="PT2S" profiles="urn:mpeg:dash:profile:isoff-live:2011,urn:com:dashif:dash264">
+  <Period id="1" start="PT0S">
+    <BaseURL>dash/</BaseURL>
+    <AdaptationSet id="1" group="1" contentType="audio" lang="ms" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.5" startWithSAP="1">
+      <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <SegmentTemplate timescale="48000" initialization="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$.dash" media="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$-$Time$.dash">
+        
+        <SegmentTimeline>
+          <S t="83696289553259" d="96256" r="2" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="audio_40080_may=40000" bandwidth="40000">
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="2" group="1" contentType="audio" lang="mul" segmentAlignment="true" audioSamplingRate="48000" mimeType="audio/mp4" codecs="mp4a.40.5" startWithSAP="1">
+      <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <SegmentTemplate timescale="48000" initialization="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$.dash" media="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$-$Time$.dash">
+        
+        <SegmentTimeline>
+          <S t="83696289553259" d="96256" r="2" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+          <S d="94208" />
+          <S d="96256" r="6" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="audio_40082_mul=40000" bandwidth="40000">
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="3" group="2" contentType="video" par="16:9" minBandwidth="382400" maxBandwidth="1649200" maxWidth="1280" maxHeight="720" segmentAlignment="true" frameRate="25" mimeType="video/mp4" startWithSAP="1">
+      
+      <ContentProtection schemeIdUri="urn:mpeg:dash:mp4protection:2011" value="cenc" default_KID="1314914F-B4F9-4984-B7A7-572A03B69F93">
+      </ContentProtection>
+      
+      <ContentProtection schemeIdUri="urn:uuid:EDEF8BA9-79D6-4ACE-A3C8-27DCD51D21ED">
+        <pssh>AAAAMnBzc2gAAAAA7e+LqXnWSs6jyCfc1R0h7QAAABISEBMUkU+0+UmEt6dXKgO2n5M=</pssh>
+      </ContentProtection>
+      
+      <ContentProtection schemeIdUri="urn:uuid:9A04F079-9840-4286-AB92-E65BE0885F95" value="MSPR 2.0">
+        <pssh>AAAC+nBzc2gAAAAAmgTweZhAQoarkuZb4IhflQAAAtraAgAAAQABANACPABXAFIATQBIAEUAQQBEAEUAUgAgAHgAbQBsAG4AcwA9ACIAaAB0AHQAcAA6AC8ALwBzAGMAaABlAG0AYQBzAC4AbQBpAGMAcgBvAHMAbwBmAHQALgBjAG8AbQAvAEQAUgBNAC8AMgAwADAANwAvADAAMwAvAFAAbABhAHkAUgBlAGEAZAB5AEgAZQBhAGQAZQByACIAIAB2AGUAcgBzAGkAbwBuAD0AIgA0AC4AMAAuADAALgAwACIAPgA8AEQAQQBUAEEAPgA8AFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBFAFkATABFAE4APgAxADYAPAAvAEsARQBZAEwARQBOAD4APABBAEwARwBJAEQAPgBBAEUAUwBDAFQAUgA8AC8AQQBMAEcASQBEAD4APAAvAFAAUgBPAFQARQBDAFQASQBOAEYATwA+ADwASwBJAEQAPgBUADUARQBVAEUALwBtADAAaABFAG0AMwBwADEAYwBxAEEANwBhAGYAawB3AD0APQA8AC8ASwBJAEQAPgA8AEMASABFAEMASwBTAFUATQA+AEcAaABFAFUANQBEAG8AawA1AGgAUQA9ADwALwBDAEgARQBDAEsAUwBVAE0APgA8AEwAQQBfAFUAUgBMAD4AaAB0AHQAcABzADoALwAvAGwAaQBjAGUAbgBzAGUALgBjAHQAcgBwAC4AYQBzAHQAcgBvAC4AYwBvAG0ALgBtAHkALwBsAGkAYwBlAG4AcwBlAFMAZQByAHYAZQByAC8AcABsAGEAeQByAGUAYQBkAHkALwB2ADEALwBhAHMAdAByAG8ALwBsAGkAYwBlAG4AcwBlAD8AYwBvAG4AdABlAG4AdABJAGQAPQA1ADEAMAAwADwALwBMAEEAXwBVAFIATAA+ADwALwBEAEEAVABBAD4APAAvAFcAUgBNAEgARQBBAEQARQBSAD4A</pssh>
+      </ContentProtection>
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <SegmentTemplate timescale="600" initialization="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$.dash" media="http://83.142.30.171:8181/segmentsooka?url=https://l02.dp.sooka.my/5100/linear/5100-$RepresentationID$-$Time$.dash">
+        
+        <SegmentTimeline>
+          <S t="1046203620601" d="1200" r="89" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="video=382400" bandwidth="382400" width="480" height="270" sar="1:1" codecs="avc1.4D4015" scanType="progressive">
+      </Representation>
+      <Representation id="video=729600" bandwidth="729600" width="480" height="270" sar="1:1" codecs="avc1.4D4016" scanType="progressive">
+      </Representation>
+      <Representation id="video=934000" bandwidth="934000" width="640" height="480" sar="4:3" codecs="avc1.4D4020" scanType="progressive">
+      </Representation>
+      <Representation id="video=1649200" bandwidth="1649200" width="1280" height="720" sar="1:1" codecs="avc1.640029" scanType="progressive">
+      </Representation>
+    </AdaptationSet>
+  </Period>
+  <UTCTiming schemeIdUri="urn:mpeg:dash:utc:http-iso:2014" value="https://time.akamai.com/?iso" />
+<BaseURL>https://l02.dp.sooka.my/5100/linear/</BaseURL></MPD>
